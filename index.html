@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Joeydash calculator</h1>
+
+a=<input id="a"><br>
+b=<input id="b"><br>
+<button onclick="add()">add</button>
+<button onclick="multiply()">multiply</button>
+<button onclick="divide()">divide</button>
+<button onclick="subtract()">subtract</button>
+<button onclick="apowerb()">a power b</button>
+<div id="ans"></div>
+
+
+<script>
+function add(){
+var a = parseInt(document.getElementById("a").value);
+var b = parseInt(document.getElementById("b").value);
+document.getElementById("ans").innerHTML= a+b;
+}
+function multiply(){
+var a = parseInt(document.getElementById("a").value);
+var b = parseInt(document.getElementById("b").value);
+document.getElementById("ans").innerHTML= a*b;
+}
+function divide(){
+var a = parseInt(document.getElementById("a").value);
+var b = parseInt(document.getElementById("b").value);
+document.getElementById("ans").innerHTML= a/b;
+}
+function subtract(){
+var a = parseInt(document.getElementById("a").value);
+var b = parseInt(document.getElementById("b").value);
+document.getElementById("ans").innerHTML= a-b;
+}
+function apowerb(){
+var a = parseInt(document.getElementById("a").value);
+var b = parseInt(document.getElementById("b").value);
+document.getElementById("ans").innerHTML= Math.pow(a,b);
+}
+</script>
+
+</body>
+</html>
